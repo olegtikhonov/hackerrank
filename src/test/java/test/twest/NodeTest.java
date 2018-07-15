@@ -621,4 +621,57 @@ public class NodeTest {
         int[] case2 = ManasaAndStones.stones(4,10,100);
         System.out.println(Arrays.toString(case2));
     }
+
+    @Test
+    public void testGridSearch() {
+	    String[] grid = {"1234567890", "0987654321", "1111111111", "1111111111", "2222222222" };
+	    String[] pattern = {"876543", "111111", "111111"};
+        System.out.println(GridSearch.gridSearch(grid, pattern));
+
+        // case 2
+        String[] case2 = {"400453592126560", "114213133098692", "474386082879648", "522356951189169", "887109450487496",
+                          "252802633388782", "502771484966748", "075975207693780", "511799789562806", "404007454272504",
+                          "549043809916080", "962410809534811", "445893523733475", "768705303214174", "650629270887160"};
+        String[] case2Pattern = {"99", "99"};
+        System.out.println(GridSearch.gridSearch(case2, case2Pattern));
+
+        // case 3
+        String[] case3 = {"7283455864", "6731158619", "8988242643", "3830589324", "2229505813",
+                          "5633845374", "6473530293", "7053106601", "0834282956", "4607924137"};
+
+        String[] case3Pattern = {"9505", "3845", "3530"};
+        System.out.println(GridSearch.gridSearch(case3, case3Pattern));
+
+        // case 4 - yes
+        String[] case4 = {"999999", "121211"};
+        String[] case4Pattern = {"99", "11"};
+        System.out.println(GridSearch.gridSearch(case4, case4Pattern));
+    }
+
+    @Test
+    public void testAbsolutePermutation() {
+	    // case 1: 2 1
+        int n = 2;
+        int k = 1;
+        int[] result = AbsolutePermutation.absolutePermutation(n, k);
+        System.out.println(Arrays.toString(result));
+
+        // case 2: 3 0
+        result = AbsolutePermutation.absolutePermutation(3, 0);
+        System.out.println(Arrays.toString(result));
+
+        // case 3: 3 2
+        result = AbsolutePermutation.absolutePermutation(3, 2);
+        System.out.println(Arrays.toString(result));
+
+    }
+
+    @Test
+    public void testBomberMan() {
+        String[] grid = {"...", ".O.", "..."};
+        System.out.println(Arrays.toString(BomberMan.bomberMan(3, grid)));
+
+        String[] secondCase = {".......", "...O...", "....O..", ".......", "OO.....", "OO....."};
+        System.out.println(Arrays.toString(BomberMan.bomberMan(3, secondCase)));
+    }
 }
