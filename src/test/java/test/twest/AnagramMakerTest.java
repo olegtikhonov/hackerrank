@@ -1,13 +1,13 @@
 package test.twest;
 
-import java.util.Arrays;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Before;
-import org.junit.Test;
+import java.util.Arrays;
 
 public class AnagramMakerTest {
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 	}
 

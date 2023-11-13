@@ -1,14 +1,12 @@
 package test.twest.data.structures;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class ListNodeTestInteger {
     ListNode<Integer> head;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         head = new ListNode<>(2);
         head = new ListNode<>(3, head);

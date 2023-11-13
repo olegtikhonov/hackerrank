@@ -1,15 +1,14 @@
 package test.twest.data.structures;
 
-import org.junit.Before;
-import org.junit.Test;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import java.util.*;
 
 public class NodeTest {
     private Node<Character> root;
     private List<Character> values = new ArrayList<>();
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         root = new Node<Character>('A');
         createATreeManually();

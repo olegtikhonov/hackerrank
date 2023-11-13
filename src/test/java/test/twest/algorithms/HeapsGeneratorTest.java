@@ -1,6 +1,6 @@
 package test.twest.algorithms;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import java.util.List;
 
 public class HeapsGeneratorTest {

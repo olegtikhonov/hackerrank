@@ -1,10 +1,8 @@
 package test.twest.algorithms;
 
-import org.junit.Test;
-
 import java.util.Arrays;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
 
 public class InsertionSortTest {
 

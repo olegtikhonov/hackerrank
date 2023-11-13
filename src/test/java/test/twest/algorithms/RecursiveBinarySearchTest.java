@@ -1,13 +1,13 @@
 package test.twest.algorithms;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.util.logging.Logger;
 
-import static org.junit.Assert.*;
 
 public class RecursiveBinarySearchTest {
-    private Logger logger   = Logger.getLogger(RecursiveBinarySearchTest.class.getSimpleName());
+    private final Logger logger   = Logger.getLogger(RecursiveBinarySearchTest.class.getSimpleName());
     private RecursiveBinarySearch recursiveBinarySearch = new RecursiveBinarySearch();
 
     @Test

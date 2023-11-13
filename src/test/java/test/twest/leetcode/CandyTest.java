@@ -1,9 +1,8 @@
 package test.twest.leetcode;
 
-import junit.framework.TestCase;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class CandyTest extends TestCase {
+public class CandyTest {
 
     @Test
     public void testCandy() {

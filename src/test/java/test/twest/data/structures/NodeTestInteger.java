@@ -1,7 +1,7 @@
 package test.twest.data.structures;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -15,7 +15,7 @@ import java.util.Queue;
 public class NodeTestInteger {
     private Node<Integer> root;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         root = new Node<Integer>(3);
         createATreeManually();

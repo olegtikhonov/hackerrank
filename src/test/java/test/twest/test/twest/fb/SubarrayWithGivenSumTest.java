@@ -1,14 +1,13 @@
 package test.twest.test.twest.fb;
 
-import org.junit.Before;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class SubarrayWithGivenSumTest {
     private SubarrayWithGivenSum subarrayWithGivenSum;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         subarrayWithGivenSum = new SubarrayWithGivenSum();
     }

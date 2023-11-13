@@ -1,6 +1,6 @@
 package test.twest.test.twest.geeks4geeks;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class MaxSubbArrayProblemTest {
 

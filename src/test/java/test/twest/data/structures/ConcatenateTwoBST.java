@@ -1,7 +1,7 @@
 package test.twest.data.structures;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ public class ConcatenateTwoBST {
     Node<Integer> treeA;
     Node<Integer> treeB;
 
-    @Before
+    @BeforeEach
     public void init() {
         treeA = new Node<>(3);
         Node<Integer> lA = new Node<>(2);

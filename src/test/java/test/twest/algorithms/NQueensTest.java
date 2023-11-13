@@ -1,17 +1,15 @@
 package test.twest.algorithms;
 
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
-
 
 public class NQueensTest {
     private NQueens nQueens;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         nQueens = new NQueens();
     }

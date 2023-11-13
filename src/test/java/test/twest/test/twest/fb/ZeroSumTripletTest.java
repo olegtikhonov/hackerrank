@@ -1,14 +1,12 @@
 package test.twest.test.twest.fb;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class ZeroSumTripletTest {
     private ZeroSumTriplet zeroSumTriplet;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         zeroSumTriplet = new ZeroSumTriplet();
     }

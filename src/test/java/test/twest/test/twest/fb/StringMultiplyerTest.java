@@ -1,14 +1,13 @@
 package test.twest.test.twest.fb;
 
-import org.junit.Before;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class StringMultiplyerTest {
     private StringMultiplyer stringMultiplyer;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         stringMultiplyer = new StringMultiplyer();
     }
