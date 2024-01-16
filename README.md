@@ -10,6 +10,42 @@ In addition, here I was putting another exercises, which are asked on interviews
 
 * Sliding window
 
+#### isSymmetric a binary tree
+The idea is to use queue, push a root node twice.
+```
+Queue<TreeNode> q = new LinkedList<>();
+q.add(root);
+q.add(root);
+
+while(!q.isEmpty()) {
+    TreeNode left = q.poll();
+    TreeNode right = q.poll();
+    
+    // the same for traversal, add twice
+    /*
+     1
+   /   \
+  2     2
+ / \   / \
+3   4 4   3
+    
+    */ 
+    q.add(left.left);
+    q.add(right.right);
+    q.add(left.right);
+    q.add(right.left);
+}
+
+```
+
+#### Sorted Array to BST
+Idea to use middle of the array
+```
+https://www.geeksforgeeks.org/sorted-array-to-balanced-bst/
+```
+
+
+
 
 
 
