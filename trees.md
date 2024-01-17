@@ -8,4 +8,17 @@ up all the values along the path equals targetSum.  A leaf is a node with no chi
 
 ![img.png](images/path_sum_of_bt.png)
 
-
+```code
+boolean dfs(int currentSum, TreeNode node, int targetSum) {
+    if(node == null) {
+        return true;
+    }
+    currentSum += node.val;
+    
+    if(node.left == null && node.right == null) {
+        return currentSum == targetSum;
+    }
+    
+    return ( dfs(currentSum, node.left, targetSum) || dfs(currentSum, node.right, targetSum));
+} 
+```
